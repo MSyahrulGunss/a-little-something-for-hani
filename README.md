@@ -44,3 +44,4 @@ Default code: `nisa`
 
 To skip the gate while testing: add `?skip=1` or use the skip button (only if `allowSkipSecretCode` is `true`).
 # Hani-
+# hanifa
