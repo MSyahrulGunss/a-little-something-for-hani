@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# A Little Something For Hanifatu Nisa
 
-## Getting Started
+A small personal website — a digital gift. It is meant to say *I like you*, quietly. It is not a relationship proposal.
 
-First, run the development server:
+## Run
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Configure everything in one file
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Edit [`src/config/site.ts`](src/config/site.ts):
 
-## Learn More
+| Field | What it does |
+| --- | --- |
+| `secretCode` | Code on the opening page (compared case-insensitively) |
+| `allowSkipSecretCode` | Shows “Skip for now”, and `?skip=1` also unlocks |
+| `welcome`, `letter` | Greeting and letter copy |
+| `music.tracks` | Title, artist, `src`, and cover image |
+| `notes.items` | Sticky notes |
+| `gallery.items` | Photos and captions |
 
-To learn more about Next.js, take a look at the following resources:
+## Music (important)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Do **not** add copyrighted songs you do not have permission to use.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Place your own licensed or original files in `public/audio/`, then point `src` at them, for example `/audio/your-song.mp3`.
 
-## Deploy on Vercel
+The music section also has **Choose your own audio** for a temporary local preview. The selected file stays in that browser session and is not uploaded. For a permanent playlist, place the file in `public/audio/` and update `music.tracks` in the config.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The two included `.wav` files are original, generated placeholders so the player works immediately.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Gallery
+
+Gallery photos are configured in `src/config/site.ts` and use images in `public/gallery/`. The Flowers section uses the images in `public/gallery/flower/`. Replace files or update each image path and caption there as needed. Captions stay focused on the individual pictures rather than implying shared memories.
+
+## Secret code
+
+Default code: `nisa`
+
+To skip the gate while testing: add `?skip=1` or use the skip button (only if `allowSkipSecretCode` is `true`).
+# Hani-
