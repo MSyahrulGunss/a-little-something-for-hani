@@ -60,7 +60,7 @@ export function SecretGate({ onUnlock }: SecretGateProps) {
           {siteConfig.gate.subtitle}
         </p>
 
-        <form onSubmit={submit} className="mt-8 space-y-4">
+        {/* <form onSubmit={submit} className="mt-8 space-y-4">
           <label className="sr-only" htmlFor="secret-code">
             Secret code
           </label>
@@ -87,7 +87,7 @@ export function SecretGate({ onUnlock }: SecretGateProps) {
           >
             {siteConfig.gate.enterLabel}
           </button>
-        </form>
+        </form> */}
 
         {siteConfig.allowSkipSecretCode ? (
           <button
