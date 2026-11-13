@@ -6,7 +6,7 @@ export const siteConfig = {
   description:
     "A small, personal page made for Hanifatu Nisa — a few thoughts, songs, and quiet things.",
 
-  secretCode: "Hani",
+  secretCode: "Hanifatu Nisa",
   secretCodeHint: "Hint: her first name, lowercase.",
   allowSkipSecretCode: true,
   unlockStorageKey: "hanifatu-nisa-gift-unlocked",
