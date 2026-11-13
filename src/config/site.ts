@@ -15,7 +15,7 @@ export const siteConfig = {
     title: "A Little Surprise For You",
     subtitle: "Someone made something special for you.",
     enterLabel: "Enter",
-    skipLabel: "Skip for now",
+    skipLabel: "Klik For Next",
     error: "Oops! That's not quite right. Try again ♡",
     placeholder: "Secret code",
   },
